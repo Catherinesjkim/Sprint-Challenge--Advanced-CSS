@@ -18,6 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .bordered();
 
     img {
       width: 28%;
@@ -58,6 +59,8 @@
       }
 
       .btn {
+        .button(@btn-bg-color, white);
+        .border-radius(5px);
       }
     }
 
