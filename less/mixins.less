@@ -11,18 +11,19 @@
   border-bottom: solid 2px black;
 }
 
-
 .button(@background, @color) {
+  display: block;
+  background: @background;
+  margin: 0 1% 2%;
+  cursor: progress;
+  width: 30%;
+  text-align: center;
   padding: 10px 10px;
   border: 2px blue;
   border-radius: 10px;
   color: @color;
-  background: @background;
-  cursor: progress;
-  text-align: center;
   font-size: 16px;
   text-transform: uppercase;
-  width: 40%;
 
   transition: all 225ms ease;
   
