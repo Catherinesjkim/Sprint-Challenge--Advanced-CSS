@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+   Adaptive web design is different from responsive design in that there isn’t one layout that always changes. Instead, there are several distinct layouts for multiple screen sizes. And the layout used depends on the screen size used. For example, there could be a specific layout for mobile phones, tables, and desktop computers - each of which are made in advance. These three designs wait on standby until someone visits the site. The site detects the type of device used, and delivers the pre-set layout for that device. So instead of single ball going through several different-sized hoops, you’d have several different balls to use depending on the hopp size. 
+
+  Responsive Web Design provides the optimal viewing experience of website, no matter what type of device the user is seeing it on. It’s an approach aimed at crafting sites to provide an optimal viewing experience--reading and navigation with a minimum of resizing, panning, and scrolling-across wide range of devices (from mobile phones to desktop computer monitors. This is done by using fluid grids. That’s a term for a design that works no matter what the screen size is. So no matter how much  you resize the screen, that same layout will automatically respond to that size, like a single ball growing or shrinking to fit through several different hoops.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+  Mobile first is designed mainly for functionality. It’s a very focused approach starting with putting out a core function and layering the extras incrementally for higher resolutions. This strategy is often referred to as a content-first strategy because your website’s content must be carefully researched and structured to be categorized based on importance. This method can be more expensive due to the more extended preparation phase and the expertise needed to create the platform’s versatility. 
+
+  Desktop first is a design for full sized screens, building for the highest specs to display and communicate as much as possible. In this design type it’s not the mobile but the desktop experience that needs to be detailed and dynamic. Going down to smaller resolutions means hiding and wrapping elements while trying to support as many original features as possible. In this case, the mobile experience is functional rather than refined. 
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+  Rem values are relative to the root html element, not to the parent element. That is, if font-size of the root element is 16px then 1 rem= 16px for all elements. If font-size is not explicitly defined in root element then 1 rem will be equal to the default font-size provided by the browser. A solution for this problem is percentage. Usually default font-size of the browser is 16px. Setting font-size: 100% will make 1 rem = =16px. But it will make calculations a little difficult. A better way is to set font-size: 63.5%. Because 62.5% of 16px is 10px. Which makes 1rem - 10px. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+  CSS Preprocessors are increasingly becoming a mainstay in the workflow of front end web developers. CSS is an incredibly complicated and nuanced language, and in an effort to make its usage easier, developers of turn to using preprocessors such as SAAS or LESS. CSS Preprocessors compile the code which is written using a special compiler, and then use that to create a css file, which can then be referenced by the main HTML document. 
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite: When using any CSS Preprocessor, you will be able to program in normal CSS just as you would if the preprocessor were not in place, but you also have more options available to you. Nested syntax, ability to define variables, mixins, function, operational functions, joining multiple files, imports, escaping. 
+
+Trouble: Parametric Mixins. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

@@ -1,1 +1,39 @@
 // Mixins Here
+.customize(@justify, @align, @font-size) {
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+  font-size: @font-size;
+}
+
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+
+.button(@background, @color) {
+  display: block;
+  background: @background;
+  margin: 0 1% 2%;
+  cursor: progress;
+  width: 30%;
+  text-align: center;
+  padding: 10px 10px;
+  border: 2px blue;
+  border-radius: 10px;
+  color: @color;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  transition: all 225ms ease;
+  
+  &:hover, &:focus {
+    background: lighten(@background, 15%)
+  }
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
